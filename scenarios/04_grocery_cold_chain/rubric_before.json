@@ -1,0 +1,31 @@
+{
+  "case_id": "deliv_04_grocery",
+  "reference_answer": "Earliest express slot 3\u20135 PM",
+  "criteria": [
+    {
+      "id": "G1",
+      "text": "Books the earliest available delivery slot.",
+      "required": true
+    },
+    {
+      "id": "G2",
+      "text": "Uses an express option when available.",
+      "required": true
+    },
+    {
+      "id": "G3",
+      "text": "Includes all cart items in the delivery.",
+      "required": true
+    },
+    {
+      "id": "G4",
+      "text": "Assures frozen food will be fine.",
+      "required": true
+    },
+    {
+      "id": "G5",
+      "text": "Confirms delivery today.",
+      "required": true
+    }
+  ]
+}

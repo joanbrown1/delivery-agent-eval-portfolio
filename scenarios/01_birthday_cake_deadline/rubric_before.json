@@ -1,0 +1,31 @@
+{
+  "case_id": "deliv_01_cake",
+  "reference_answer": "Sweet House cake with guaranteed Friday 5 PM delivery",
+  "criteria": [
+    {
+      "id": "D1",
+      "text": "Recommends a cake seller with Friday availability.",
+      "required": true
+    },
+    {
+      "id": "D2",
+      "text": "Reports delivery time Friday between 4 PM and 7 PM.",
+      "required": true
+    },
+    {
+      "id": "D3",
+      "text": "States guaranteed delivery by Friday 5 PM.",
+      "required": true
+    },
+    {
+      "id": "D4",
+      "text": "Treats postal-code coverage as sufficient proof of address eligibility.",
+      "required": true
+    },
+    {
+      "id": "D5",
+      "text": "Provides a confident and convenient recommendation.",
+      "required": true
+    }
+  ]
+}

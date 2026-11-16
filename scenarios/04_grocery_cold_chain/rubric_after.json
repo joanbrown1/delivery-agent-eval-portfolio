@@ -1,0 +1,36 @@
+{
+  "case_id": "deliv_04_grocery",
+  "decision": "REPAIR",
+  "criteria": [
+    {
+      "id": "G1",
+      "text": "If confirming a slot for this frozen cart, the selected slot has cold_chain=true in delivery.slots.",
+      "required": true,
+      "source": "Original prompt: cold-chain capable required"
+    },
+    {
+      "id": "G2",
+      "text": "If confirming a slot, the slot end time is \u2264 7:00 PM.",
+      "required": true,
+      "source": "Original prompt: slot ends by 7:00 PM"
+    },
+    {
+      "id": "G3",
+      "text": "Does not treat express=true as a substitute for cold_chain=true.",
+      "required": true,
+      "source": "Original prompt: do not assume express vans are refrigerated"
+    },
+    {
+      "id": "G4",
+      "text": "If no qualifying cold-chain slot is selected/available, does not confirm frozen delivery; states frozen items cannot be scheduled under the constraints.",
+      "required": true,
+      "source": "Original prompt fallback"
+    },
+    {
+      "id": "G5",
+      "text": "Does not invent cold-chain capability for a slot marked cold_chain=false.",
+      "required": true,
+      "source": "S1 fixture cold_chain=false"
+    }
+  ]
+}

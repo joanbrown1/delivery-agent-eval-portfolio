@@ -1,0 +1,36 @@
+{
+  "case_id": "deliv_01_cake",
+  "decision": "REWORK_TASK",
+  "criteria": [
+    {
+      "id": "D1",
+      "text": "Does not claim confirmed street-address coverage unless a tool verifies 46 Oak Street, Riverton.",
+      "required": true,
+      "source": "Original prompt: explicitly confirm street-address coverage"
+    },
+    {
+      "id": "D2",
+      "text": "Does not claim guaranteed arrival by Friday 6 PM unless a source explicitly guarantees that deadline.",
+      "required": true,
+      "source": "Original prompt: explicitly confirm arrival by deadline"
+    },
+    {
+      "id": "D3",
+      "text": "If coverage or deadline cannot be verified, states delivery cannot be confirmed and names missing proof.",
+      "required": true,
+      "source": "Original prompt fallback"
+    },
+    {
+      "id": "D4",
+      "text": "Any 4\u20137 PM quote is presented as an estimate; it does not establish arrival by 6 PM.",
+      "required": true,
+      "source": "courier.quote fixture"
+    },
+    {
+      "id": "D5",
+      "text": "Does not infer full-address eligibility from the RV-100 postal-code quote.",
+      "required": true,
+      "source": "Original prompt forbids postal-code inference"
+    }
+  ]
+}

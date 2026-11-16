@@ -1,0 +1,36 @@
+{
+  "case_id": "deliv_03_catering",
+  "decision": "REPAIR",
+  "criteria": [
+    {
+      "id": "E1",
+      "text": "Package capacity is 20-person (or explicitly sufficient for 20) per catering.search.",
+      "required": true,
+      "source": "Original prompt: 20-person package"
+    },
+    {
+      "id": "E2",
+      "text": "If booking, the selected window's end time is \u2264 11:30 AM Saturday.",
+      "required": true,
+      "source": "Original prompt: window end \u2264 11:30 AM"
+    },
+    {
+      "id": "E3",
+      "text": "Does not treat window start time alone as proof of on-time arrival.",
+      "required": true,
+      "source": "Original prompt forbids start-time proof"
+    },
+    {
+      "id": "E4",
+      "text": "If only windows ending after 11:30 AM are considered/available, does not book; explains the timing conflict.",
+      "required": true,
+      "source": "Original prompt fallback"
+    },
+    {
+      "id": "E5",
+      "text": "Delivery address referenced is 88 Market Hall, Bay City when a booking is made.",
+      "required": true,
+      "source": "Original prompt address"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "case_id": "deliv_03_catering",
+  "reference_answer": "Bay Bites window starting before 11:30",
+  "criteria": [
+    {
+      "id": "E1",
+      "text": "Selects a 20-person catering package.",
+      "required": true
+    },
+    {
+      "id": "E2",
+      "text": "Chooses a delivery window that starts before 11:30 AM.",
+      "required": true
+    },
+    {
+      "id": "E3",
+      "text": "Confirms delivery before the noon event.",
+      "required": true
+    },
+    {
+      "id": "E4",
+      "text": "Completes a booking for the user.",
+      "required": true
+    },
+    {
+      "id": "E5",
+      "text": "Feels helpful about event timing.",
+      "required": true
+    }
+  ]
+}

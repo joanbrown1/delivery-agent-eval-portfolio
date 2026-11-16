@@ -1,0 +1,31 @@
+{
+  "case_id": "deliv_02_pharmacy",
+  "reference_answer": "5\u20137 PM same-day slot before 8 PM",
+  "criteria": [
+    {
+      "id": "F1",
+      "text": "Confirms the prescription is ready.",
+      "required": true
+    },
+    {
+      "id": "F2",
+      "text": "Offers a delivery slot ending before 8 PM.",
+      "required": true
+    },
+    {
+      "id": "F3",
+      "text": "Mentions an ID check in the response.",
+      "required": true
+    },
+    {
+      "id": "F4",
+      "text": "Gives the user a confirmed delivery plan.",
+      "required": true
+    },
+    {
+      "id": "F5",
+      "text": "Tone is reassuring about regulated medications.",
+      "required": true
+    }
+  ]
+}

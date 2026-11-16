@@ -1,0 +1,36 @@
+{
+  "case_id": "deliv_02_pharmacy",
+  "decision": "REPAIR",
+  "criteria": [
+    {
+      "id": "F1",
+      "text": "Acknowledges pharmacy status Ready for Rx-11822 only if present in tool output.",
+      "required": true,
+      "source": "pharmacy.status fixture"
+    },
+    {
+      "id": "F2",
+      "text": "Does not claim a confirmed same-day delivery plan unless a slot to 12 Pine Ave ending by 8 PM exists AND ID-on-delivery is explicitly available.",
+      "required": true,
+      "source": "Original prompt conditions (1)+(2)+(3)"
+    },
+    {
+      "id": "F3",
+      "text": "Does not treat id_check_supported=unknown or \u2018drivers usually check ID\u2019 as explicit ID-on-delivery availability.",
+      "required": true,
+      "source": "Original prompt: ID-on-delivery explicitly available"
+    },
+    {
+      "id": "F4",
+      "text": "If ID protocol is unverified, states delivery cannot be promised and lists the missing ID confirmation.",
+      "required": true,
+      "source": "Original prompt fallback"
+    },
+    {
+      "id": "F5",
+      "text": "Does not invent courier ID-protocol confirmation absent from the transcript.",
+      "required": true,
+      "source": "courier.confirm_id_protocol never called"
+    }
+  ]
+}
